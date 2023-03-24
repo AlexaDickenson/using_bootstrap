@@ -7,12 +7,55 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <style> img {width: 100%;}</style>
+    <style> 
+    body {color: midnightblue;}
+    .navbar {color: midnightblue;}
+    img {width: 100%;}
+    .text {
+        text-align: center;
+        padding-top: 40px;
+        font-weight:800;
+        font-size: xx-large;
+        color:white;
+        width: 100%;
+        height: 200px;
+        background-image:url(https://cdn.pixabay.com/photo/2020/03/30/13/29/space-4984262_1280.jpg)
+        ; 
+    }
+    .navbar-brand{
+        font-weight: 900;
+    }
+    .divider {height: 40px;}
+    .row {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .btn-primary{background-color: midnightblue;}
+    .aboutus {background-color:whitesmoke}
+    .about {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height:200px;
+        width:350px;
+        }
+    .btn-sm {display: block;
+        margin-left: auto;
+        margin-right:auto ;}
+   
+    .footer{
+        height: 40px;
+        background-color: whitesmoke;
+        text-align: center;
+        width: 100%;
+        padding-top: 10px;
+    }
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">SET</a>
+          <a class="navbar-brand" href="#"><h1><i><b>SET</b></i></h1></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -26,6 +69,61 @@
           </div>
         </div>
       </nav>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA_s4dFr41gkMvPYyQjUA71Z40Xex5jbl-Ow&usqp=CAU" alt="outer space">
+    <div class="text">This page is awesome.<br>
+    <button type="button" class="btn btn-outline-light">Learn more</button>
+    </div>
+    <div class="divider"></div>
+    
+    <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Feature 1</h5>
+              <p class="card-text">Learn more about feature 1.</p>
+              <a href="#" class="btn btn-primary">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Feature 2</h5>
+              <p class="card-text">Learn more about feature 2.</p>
+              <a href="#" class="btn btn-primary">Learn more</a>
+            </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="aboutus">
+        <h4>About us:</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <img class="about" src="https://media.istockphoto.com/id/1399624722/photo/business-diversity-a-multi-ethnicity-team-in-discussion.jpg?b=1&s=170667a&w=0&k=20&c=RB4TLhM2H0mk6WoAnurx86cfOBaiUWLSnYFoR5kP2yM=" alt="group of people">
+      </div>
+      <div class="divider"></div>
+      <h5>Contact us:</h5>
+      </div>
+      <div class="row g-3">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+          </div>
+          </div>
+          <br>
+          <div class="row g-3">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Email" aria-label="Email">
+          </div>
+          <div class="col">
+        <input type="text" class="form-control" placeholder="Phone number" aria-label="Phone number">
+        </div>
+        <div>
+        <button type="button" class="btn btn-primary btn-sm">Submit</button>
+      </div>
+      <div class="divider"></div>
+      <div class="footer">Copyright SET 2023</div>
+    </div>
+
     </body>
 </html>
